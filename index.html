@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body class="flex-column min-100-vh">
+    <header class="hero">
+        <h1 class="">Weather Dashboard</h1>
+    </header>
+
+    <main class="flex-row justify-space-between">
+        <!-- LEFT COLUMN -->
+        <div class="col-4">
+            <div class="search-box">
+                <h2 id="form-title" class="section-title">Search for a City:</h2>
+                <form id="user-form" class="">
+                    <input name="city-name" id="city" type="text" autofocus="true" class="form-input" />
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+            <div id="history">
+                <ul id="history-list"></ul>
+            </div>
+        </div>
+        <!-- RIGHT COLUMN -->
+        <div class="weather-info col-8">
+            <div class="city-container col-12">  
+                <h3 id="city-title">NAME</h3>
+                <p id="temp" class="city-info">Temp: <span id="temp-degrees"></span>F</p>
+                <p id="wind" class="city-info">Wind: <span id="wind-speed"></span> MPH</p>
+                <p id="humidity" class="city-info">Humidity: <span id="humidity-percent"></span> %</p>
+                <p id="uv-index" class="city-info">UV Index: <span id="uv-decimal"></span></p>
+            </div>
+            <div id="forecasts" class="forecast-container col-12 flex-row justify-space-between">
+                <h3 class="col-12">5-day Forecast</h3>
+                <div class="card">
+                    <h4 class="card-header">Date</h4>
+                    <img>
+                    <p id="temp" class="card-body">Temp: <span id="temp-degrees-day1"></span>F</p>
+                    <p id="wind" class="card-body">Wind: <span id="wind-speed-day1"></span> MPH</p>
+                    <p id="humidity" class="card-body">Humidity: <span id="humidity-percent-day1"></span> %</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-header">Date</h4>
+                    <img>
+                    <p id="temp" class="card-body">Temp: <span id="temp-degrees-day2"></span>F</p>
+                    <p id="wind" class="card-body">Wind: <span id="wind-speed-day2"></span> MPH</p>
+                    <p id="humidity" class="card-body">Humidity: <span id="humidity-percent-day2"></span> %</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-header">Date</h4>
+                    <img>
+                    <p id="temp" class="card-body">Temp: <span id="temp-degrees-day3"></span>F</p>
+                    <p id="wind" class="card-body">Wind: <span id="wind-speed-day3"></span> MPH</p>
+                    <p id="humidity" class="card-body">Humidity: <span id="humidity-percent-day3"></span> %</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-header">Date</h4>
+                    <img>
+                    <p id="temp" class="card-body">Temp: <span id="temp-degrees-day4"></span>F</p>
+                    <p id="wind" class="card-body">Wind: <span id="wind-speed-day4"></span> MPH</p>
+                    <p id="humidity" class="card-body">Humidity: <span id="humidity-percent-day4"></span> %</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-header">Date</h4>
+                    <img>
+                    <p id="temp" class="card-body">Temp: <span id="temp-degrees-day5"></span>F</p>
+                    <p id="wind" class="card-body">Wind: <span id="wind-speed-day5"></span> MPH</p>
+                    <p id="humidity" class="card-body">Humidity: <span id="humidity-percent-day5"></span> %</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./assets/js/home.js"></script>
+</body>
+</html>
