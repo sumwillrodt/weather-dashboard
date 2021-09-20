@@ -100,8 +100,12 @@ var displayWeather = function(searchedCity) {
 
 
 var displayForecast = function(searchedCity) {
-    
-    var day1Date = document.getElementById("day1");
+    var days = [];
+    for (var i = 0; i < searchedCity.list.length; i+=8) {
+        days.push(searchedCity.list[i]);
+        console.log(days);
+    }
+    //var day1Date = document.getElementById("day1");
     //day1Date.textContent = searchedCity.forecast.timefrom;
 }
 
