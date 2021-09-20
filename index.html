@@ -14,28 +14,28 @@
 
     <main class="flex-row justify-space-between">
         <!-- LEFT COLUMN -->
-        <div class="col-4">
+        <div class="col-12 col-md-4">
             <div class="search-box">
                 <h2 id="form-title" class="section-title">Search for a City:</h2>
                 <form id="user-form" class="">
-                    <input name="city-name" id="city" type="text" autofocus="true" class="form-input" />
+                    <input name="city-name" id="city-name" type="text" autofocus="true" class="form-input" />
                     <button type="submit" class="btn">Submit</button>
                 </form>
             </div>
-            <div id="history">
-                <ul id="history-list"></ul>
+            <div id="city-list" class="">
+                <div id="cities-container" class="list-group"></div>
             </div>
         </div>
         <!-- RIGHT COLUMN -->
-        <div class="weather-info col-8">
-            <div class="city-container col-12">  
-                <h3 id="city-title">NAME</h3>
-                <p id="temp" class="city-info">Temp: <span id="temp-degrees"></span>F</p>
-                <p id="wind" class="city-info">Wind: <span id="wind-speed"></span> MPH</p>
-                <p id="humidity" class="city-info">Humidity: <span id="humidity-percent"></span> %</p>
-                <p id="uv-index" class="city-info">UV Index: <span id="uv-decimal"></span></p>
+        <div class="col-12 col-md-8">
+            <div class="city-container">  
+                <h3 id="city-title"></h3>
+                <p id="current-temp" class="city-info">Temp: <span id="temp-degrees"></span> F</p>
+                <p id="current-wind" class="city-info">Wind: <span id="wind-speed"></span> MPH</p>
+                <p id="current-humidity" class="city-info">Humidity: <span id="humidity-percent"></span> %</p>
+                <p id="current-uv-index" class="city-info">UV Index: <span id="uv-decimal"></span></p>
             </div>
-            <div id="forecasts" class="forecast-container col-12 flex-row justify-space-between">
+            <div id="forecasts" class="forecast-container flex-row justify-space-between">
                 <h3 class="col-12">5-day Forecast</h3>
                 <div class="card">
                     <h4 class="card-header">Date</h4>

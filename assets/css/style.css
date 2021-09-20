@@ -135,6 +135,24 @@ h3 {
     color: var(--dark);
 }
 
+.favorable {
+    background-color: green;
+    border-radius: 5px;
+    padding: 1px 25px;
+}
+
+.moderate {
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 1px 25px;
+}
+
+.severe {
+    background-color: red;
+    border-radius: 5px;
+    padding: 1px 25px;
+}
+
 /*FORECASTED CITIES INFO*/
 
 
