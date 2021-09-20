@@ -22,8 +22,7 @@
                     <button type="submit" class="btn">Submit</button>
                 </form>
             </div>
-            <div id="city-list" class="">
-                <div id="cities-container" class="list-group"></div>
+            <div id="cities-container" class="list-group"></div>
             </div>
         </div>
         <!-- RIGHT COLUMN -->
@@ -38,7 +37,7 @@
             <div id="forecasts" class="forecast-container flex-row justify-space-between">
                 <h3 class="col-12">5-day Forecast</h3>
                 <div class="card">
-                    <h4 class="card-header">Date</h4>
+                    <h4 class="card-header" id="day-1">Date</h4>
                     <img>
                     <p id="temp" class="card-body">Temp: <span id="temp-degrees-day1"></span>F</p>
                     <p id="wind" class="card-body">Wind: <span id="wind-speed-day1"></span> MPH</p>
@@ -78,5 +77,6 @@
     </main>
 
     <script src="./assets/js/home.js"></script>
+    <script src="https://unpkg.com/moment"></script>
 </body>
 </html>

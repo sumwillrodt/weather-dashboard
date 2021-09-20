@@ -2,7 +2,7 @@
     --primary: rgb(78, 139, 231);
     --secondary: rgb(35, 12, 88);
     --tertiary: white;
-    --light-dark: #888888;
+    --light-dark: #c7c7c7;
     --dark: #222;
 }
 
@@ -61,8 +61,19 @@ main {
     margin-bottom: 15px;
 }
 
-ul {
-    padding: 15px 0;
+.visited-city {
+    font-size: 20pt;
+    text-decoration:none;
+    padding: 10px 5px;
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+    border-radius: 5pt;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: var(--dark);
+    background-color: var(--light-dark);
 }
 
 /* CARDS */
@@ -121,6 +132,8 @@ h3 {
 .form-input:active {
     border: 2px solid var(--primary);
 }
+
+
 
 /*CURRENT CITY INFO*/
 .city-container {
